@@ -4,7 +4,7 @@
  */
 .app-header {
   display: flex;
-  gap: 1rem;
+  gap: var(--app-space-xs);
   justify-content: space-between;
 
   background-color: var(--app-foreground);
@@ -23,12 +23,21 @@
     }
   }
 
-  .logo-container,
+  .logo-container a,
   .actions-container {
     display: flex;
-    gap: 0.25rem;
     justify-content: flex-start;
     align-items: center;
     padding: 0 var(--app-container-padding);
+  }
+  .logo-container a {
+    gap: var(--app-space-xs);
+  }
+  .actions-container {
+    gap: var(--app-space-md);
+  }
+
+  .invert-image {
+    filter: invert(1);
   }
 }

@@ -3,12 +3,12 @@ button {
   color: var(--app-foreground);
   border: var(--app-container-border-width) solid transparent;
   padding: 0 var(--app-container-padding);
-  min-width: var(--bp-size-12);
+  min-width: var(--app-size-12);
   --font-size: var(--bp-text-size-300);
   --font-weight: var(--bp-text-weight-regular);
   --line-height: var(--font-size);
   --text-align: center;
-  --height: calc(var(--bp-size-8) + var(--bp-size-3));
+  height: calc(var(--app-size-8) + var(--app-size-3));
   display: inline-flex;
   position: relative;
   --cursor: pointer;
