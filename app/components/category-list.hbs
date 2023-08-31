@@ -1,0 +1,10 @@
+<h2>{{@title}}</h2>
+<ul>
+  {{#each @items as | categoryItem|}}
+  <li>
+    <h3>As {{categoryItem.role}}</h3>
+    <p>I {{categoryItem.task}}</p>
+    <button type="button" {{on 'click' (fn this.showItem categoryItem)}}>{{categoryItem.role}}</button>
+  </li>
+    {{/each}}
+</ul>

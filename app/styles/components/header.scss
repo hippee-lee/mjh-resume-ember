@@ -1,0 +1,34 @@
+/**
+ * Create a title component that renders an <h1> which is
+ * centered, deeppink and sized at 1.5em
+ */
+.app-header {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+
+  background-color: var(--app-foreground);
+  color: var(--app-background);
+
+  > * {
+    background-color: var(--app-foreground);
+    color: var(--app-background);
+
+    & a {
+      color: var(--app-background);
+      text-decoration: none;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .logo-container,
+  .actions-container {
+    display: flex;
+    gap: 0.25rem;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 var(--app-container-padding);
+  }
+}

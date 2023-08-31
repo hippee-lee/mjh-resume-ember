@@ -1,0 +1,46 @@
+/* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+@import "components/header.scss";
+
+:root {
+  // Base Color Palette
+  --app-vanilla: lch(77.99% 13.04 80.95); // (whitish)
+  --app-texas-rose: lch(75.59% 63.1 66.22); // (orangish)
+  --app-scooter: lch(69.45% 40.94 211.33); // (aqua marine)
+  --app-gothic: lch(59.73% 15.31 226.64); //  (blue gray)
+  --app-fuscous-gray: lch(32.75% 0 0); // (dark gray)
+
+  // App colors
+  --app-foreground: var(--app-fuscous-gray);
+  --app-background: var(--app-vanilla);
+  --app-text-color: var(app-foreground);
+  --app-container-border-color: var(--app-gothic);
+
+  // Sizes
+  --app-scale-size: 1;
+  --app-size-12: calc(var(--app-scale-size) * 96px);
+  --app-size-11: calc(var(--app-scale-size) * 72px);
+  --app-size-10: calc(var(--app-scale-size) * 64px);
+  --app-size-9: calc(var(--app-scale-size) * 48px);
+  --app-size-8: calc(var(--app-scale-size) * 32px);
+  --app-size-7: calc(var(--app-scale-size) * 24px);
+  --app-size-6: calc(var(--app-scale-size) * 16px);
+  --app-size-5: calc(var(--app-scale-size) * 12px);
+  --app-size-4: calc(var(--app-scale-size) * 8px);
+  --app-size-3: calc(var(--app-scale-size) * 4px);
+  --app-size-2: calc(var(--app-scale-size) * 2px);
+  --app-size-1: calc(var(--app-scale-size) * 1px);
+  --app-size-0: calc(var(--app-scale-size) * 0px);
+  --app-space-xl: calc(var(--app-scale-space) * 64px);
+  --app-space-lg: calc(var(--app-scale-space) * 48px);
+  --app-space-md: calc(var(--app-scale-space) * 24px);
+  --app-space-sm: calc(var(--app-scale-space) * 16px);
+  --app-space-xs: calc(var(--app-scale-space) * 8px);
+
+  // Spaciong
+  --app-container-padding: var(--app-size-5);
+  --app-container-border-width: var(--app-size-3);
+
+  // App elements, objects and components
+  --app-container-border: var(--app-container-border-width) solid
+    var(--app-container-border-color);
+}
